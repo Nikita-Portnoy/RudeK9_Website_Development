@@ -1,0 +1,124 @@
+/* Imports Accordion */
+#ImportsAccordion {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.ImportCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #3D3A4B;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.ImportCard button {
+  display: block;
+  position: relative;
+  height: auto;
+  width: 100%;
+  color: #fff;
+  padding: 15px 0px;
+  margin: 0px;
+  background-color: #3D3A4B;
+  font-family: 'Bowlby One SC', cursive;
+  cursor: pointer;
+  border: none;
+  border-bottom: 5px solid #B19994;
+}
+
+.ImportCard button:focus {
+  outline: none;
+}
+/* Photo Box */
+.PhotoBox {
+  background-color: #D3C0CD;
+  padding: 20px;
+}
+
+.PhotoBox img {
+  height: 250px;
+  border: 2px solid #3D3A4B;
+}
+
+.GeroAchievementBox {
+  background-color: #B19994;
+  height: 530px;
+  width: auto;
+  padding: 10px;
+}
+
+.GeroAchievementBox img {
+  border: 2px solid #3D3A4B;
+  box-shadow: 5px 5px 5px black;
+}
+
+.GeroAchievementBox h4 {
+  font-family: 'Bowlby One SC', cursive;
+}
+/* /Photo Box */
+/* Tables */
+.PedigreeBox {
+  display: block;
+  position: relative;
+  height: 65px;
+  padding: 15px;
+  font-family: 'Bowlby One SC', cursive;
+  text-align: center;
+  color: #3D3A4B;
+  background-color: #D3C0CD;
+  cursor: pointer;
+  max-height: 65px;
+}
+
+.PedigreeBox h3{
+  display: inline-block;
+  position: relative;
+  font-size: 2rem;
+  max-height: 35px;
+}
+
+table, tr, td {
+  border: 1px solid black !important;
+}
+/* /Tables */
+/* /Imports Accordion */
+/* Latest Arrival */
+.ArrivalCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #3D3A4B;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.ArrivalCard h2 {
+  display: block;
+  position: relative;
+  height: auto;
+  width: 100%;
+  color: #fff;
+  padding: 15px 0px 15px 10px;
+  margin: 0px;
+  background-color: #3D3A4B;
+  font-family: 'Bowlby One SC', cursive;
+}
+
+.ArrivalCard img {
+  position: relative;
+  height: 250px;
+  width: auto;
+}
+
+.ArrivalParents {
+  background-color: #D3C0CD;
+}
+
+.ArrivalParents h3 {
+  font-family: 'Bowlby One SC', cursive;
+}
+/* /Latest Arrival */

@@ -1,0 +1,45 @@
+/* Harvey Allen Card */
+.ContactCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #3D3A4B;
+  margin: 30px 0px;
+  box-sizing: border-box;
+}
+
+.ContactCard h3 {
+  background-color: #3D3A4B;
+  font-family: 'Bowlby One SC', cursive;
+  color: #fff;
+  padding: 15px 0px;
+  margin: 0px;
+}
+
+.CardBody {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  font-size: 1.35rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.CardText ul{
+  position: relative;
+  display: inline-block;
+}
+
+.CardText li{
+  margin: 5px 0px;
+}
+
+.CardBody img {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  height: auto;
+  vertical-align: top;
+  float: right;
+}
+/* /Harvey Allen Card */
