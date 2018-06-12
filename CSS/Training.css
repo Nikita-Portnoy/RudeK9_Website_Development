@@ -141,27 +141,19 @@ td {
   height: 100%;
   width: 100%;
   top: 0px;
-  text-align: center;
   cursor: pointer;
   opacity: 0;
   transition: opacity .5s;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 .PhotoOverlay h2{
+  position: relative;
+  top: 40%;
+  margin: auto;
   font-size: 50px;
   color: #3D3A4B;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-
-.PhotoOverlay p{
-  font-size: 25px;
-  color: #3D3A4B;
-}
-
-.PhotoOverlay ul {
-  list-style: none;
 }
 
 .PhotoOverlay:hover {

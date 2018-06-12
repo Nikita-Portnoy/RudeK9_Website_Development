@@ -83,13 +83,13 @@
                   <a href="mailto:asdt@rudek9.com" class="ListGroup list-group-item list-group-item-action"><b class="mr-3">Email Us:</b>asdt@rudek9.com<i class="d-none d-sm-block float-right fa-2x fas fa-envelope"></i></a>
                   <a href="https://www.facebook.com/RudeK9.ASDT/" class="ListGroup list-group-item list-group-item-action"><b class="mr-3">Facebook:</b>Rude K9: Allen's Sandstone Dog Training<i class="d-none d-sm-block float-right fa-2x fab fa-facebook-square"></i></a>
                   <a href="https://www.instagram.com/rudek9/" class="ListGroup list-group-item list-group-item-action"><b class="mr-3">Instagram:</b>@rudek9<i class="d-none d-sm-block float-right fa-2x fab fa-instagram"></i></a>
-                  <a id="LocationOrange" href="#" class="ListGroup list-group-item list-group-item-action"><b class="mr-3">Orange:</b>231 W Blueridge Ave, 92865<i class="d-none d-sm-block float-right fa-2x fas fa-building"></i></a>
-                  <a id="LocationChino" href="#" class="ListGroup list-group-item list-group-item-action"><b class="mr-3">Chino:</b>3415 Chino Avenue, 91710<i class="d-none d-sm-block float-right fa-2x fas fa-tree"></i></a>
+                  <a id="LocationOrange" href="#MapLocations" class="ListGroup list-group-item list-group-item-action"><b class="mr-3">Orange:</b>231 W Blueridge Ave, 92865<i class="d-none d-sm-block float-right fa-2x fas fa-building"></i></a>
+                  <a id="LocationChino" href="#MapLocations" class="ListGroup list-group-item list-group-item-action"><b class="mr-3">Chino:</b>3415 Chino Avenue, 91710<i class="d-none d-sm-block float-right fa-2x fas fa-tree"></i></a>
                 </div>
               </div>
 
 <!-- Map -->
-              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1c9V7ksxp5N-LDedpJfTPi7iileK6DVcw"></iframe>
+              <div class="MapContainer" id="MapLocations"></div>
 
             </div>
           </div>
@@ -121,7 +121,11 @@
 <!-- Custom Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./JS/PageUtilities.js" type="text/javascript"></script>
-    <script src="./JS/TrainingLocationLinks.js" type="text/javascript"></script>
+    <script src="./JS/Gmap.js" type="text/javascript"></script>
+
+<!-- Google Maps API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYbasZZurgizJIm6-mMx0LcMG1xwgyQX8&callback=initMapLoc"></script>
+
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

@@ -8,7 +8,7 @@
 }
 
 /* Map */
-iframe {
+.MapContainer {
   width: 100%;
   height: 500px;
   border: 5px solid #3D3A4B;
