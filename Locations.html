@@ -33,7 +33,7 @@
     <div class="MenuFrame">
       <div class="MenuContainer">
         <ul class="Menu" id="TopNav">
-          <li id="NavActive"><a href="#Top">Home<i class="fa fa-home" aria-hidden="true"></i></a></li>
+          <li><a href="./Homepage.html">Home<i class="fa fa-home" aria-hidden="true"></i></a></li>
           <li class="ServicesBtn"><a href="javascript:void(0)">Services <span class="fa fa-angle-double-down"></span></a>
             <ul class="Submenu">
               <li><a href="./Training.html">Training</a></li>
@@ -41,7 +41,7 @@
               <li><a href="./Puppies.html">Puppies</a></li>
             </ul>
           </li>
-          <li><a href="./Locations.html">Locations</a></li>
+          <li id="NavActive"><a href="./Locations.html">Locations</a></li>
           <li><a href="./About.html">About</a></li>
           <li><a href="./Contact.html">Contact</a></li>
           <li><a href="./Gallery.html">Gallery</a></li>
@@ -77,11 +77,16 @@
               </div>
 
               <div class="LocationCard">
-                <h3 class="pl-2">Chino: <span class="float-right pr-2">3415 Chino Avenue, 91710</span></h3>
-                <div class="CardBody container-fluid">
-                  <div class="row p-2 no-gutters">
+                <h3 class="LocationHeader pl-2">Chino: <span class="float-right pr-2 d-none d-sm-inline">3415 Chino Avenue, 91710</span></h3>
+                <div class="CardBody">
+                  <div class="row p-none p-sm-2 no-gutters">
                     <div class="ScheduleBox col-12 col-xl-6">
-                      <table class="ScheduleTbl table">
+                      <ul class="list-group d-block d-sm-none">
+                        <li class="ListGroup list-group-item"><b>Thursday: </b>Beginner 6pm.</li>
+                        <li class="ListGroup list-group-item"><b>Friday: </b>Beginner 6pm.</li>
+                        <li class="ListGroup list-group-item"><b>Saturday: </b>Beginner 8am, Intermediate 9:30am.</li>
+                      </ul>
+                      <table class="ScheduleTbl table d-none d-sm-table">
                         <thead>
                           <tr>
                             <th scope="col">Day</th>
@@ -109,6 +114,7 @@
                       </table>
                     </div>
                     <div class="GMap col-12 col-xl-6">
+                      <h3 class="LocationAddress text-center d-block d-sm-none">3415 Chino Avenue, 91710</h3>
                       <div class="MapContainer" id="MapChino"></div>
                     </div>
                   </div>
@@ -116,11 +122,16 @@
               </div>
 
               <div class="LocationCard">
-                <h3 class="pl-2">Orange: <span class="float-right pr-2">231 W Blueridge Ave, 92865</span></h3>
-                <div class="CardBody container-fluid">
-                  <div class="row p-2 no-gutters">
+                <h3 class="LocationHeader pl-2">Orange: <span class="float-right pr-2 d-none d-sm-inline">231 W Blueridge Ave, 92865</span></h3>
+                <div class="CardBody">
+                  <div class="row p-none p-sm-2 no-gutters">
                     <div class="ScheduleBox col-12 col-xl-6">
-                      <table class="ScheduleTbl table">
+                      <ul class="list-group d-block d-sm-none">
+                        <li class="ListGroup list-group-item"><b>Tuesday: </b>Beginner 6pm, Intermediate 7pm.</li>
+                        <li class="ListGroup list-group-item"><b>Wednesday: </b>Beginner 6pm.</li>
+                        <li class="ListGroup list-group-item"><b>Sunday: </b>Beginner 8am, Intermediate 9am.</li>
+                      </ul>
+                      <table class="ScheduleTbl table d-none d-sm-table">
                         <thead>
                           <tr>
                             <th scope="col">Day</th>
@@ -148,6 +159,7 @@
                       </table>
                     </div>
                     <div class="GMap col-12 col-xl-6">
+                      <h3 class="LocationAddress text-center d-block d-sm-none">231 W Blueridge Ave, 92865</h3>
                       <div class="MapContainer" id="MapOrange"></div>
                     </div>
                   </div>
