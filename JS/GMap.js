@@ -1,4 +1,11 @@
 $(document).ready(function(){
+//Adding links to Training.html. When location cards are clicked the user is take to Locations Page.
+  $('#LocationChino').click(function() {
+    window.location.assign('./Locations.html#CardChino');
+  })
+  $('#LocationOrange').click(function() {
+    window.location.assign('./Locations.html#CardOrange');
+  })
 // Fixing the Static Menu Bar Problem when jumping to ID's
   var Offset = $(':target').offset();
   var JumpTo = Offset.top - 60;
@@ -23,8 +30,8 @@ function initMapLoc() {
 
   var MapLocations = new google.maps.Map(document.getElementById('MapLocations'), {zoom: 11, center: Current});
 
-  $('#LocationOrange').click(function(){MapLocations.panTo(Orange);MapLocations.setZoom(15)});
-  $('#LocationChino').click(function(){MapLocations.panTo(Chino);MapLocations.setZoom(15)});
+  $('#LinkOrange').click(function(){MapLocations.panTo(Orange);MapLocations.setZoom(15)});
+  $('#LinkChino').click(function(){MapLocations.panTo(Chino);MapLocations.setZoom(15)});
 
   var MarkerOrangeLoc = new google.maps.Marker({position: Orange, map: MapLocations});
   var MarkerChinoLoc = new google.maps.Marker({position: Chino, map: MapLocations});
