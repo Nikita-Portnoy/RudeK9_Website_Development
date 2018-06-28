@@ -90,13 +90,15 @@ body {
 
 /* Responsive Menu */
 .MenuFrame #Icon {
+  font-family: 'Bowlby One SC', cursive;
   color: #3D3A4B;
   float: right;
   font-size: 20px;
   text-decoration: none;
   height: 45px;
-  padding: 9px 15px;
+  padding: 9px 5px;
   display: none;
+  border-left: 1px solid #E3DFFF;
 }
 
 .MenuFrame #Icon:hover {

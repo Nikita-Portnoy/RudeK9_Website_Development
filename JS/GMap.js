@@ -1,10 +1,4 @@
 $(document).ready(function(){
-  $('#LocationChino').click(function() {
-    window.location.assign('./Locations.html#CardChino')
-  })
-  $('#LocationOrange').click(function() {
-    window.location.assign('./Locations.html#CardOrange')
-  })
 // Fixing the Static Menu Bar Problem when jumping to ID's
   var Offset = $(':target').offset();
   var JumpTo = Offset.top - 60;
