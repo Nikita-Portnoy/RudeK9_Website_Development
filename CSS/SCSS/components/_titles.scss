@@ -1,0 +1,25 @@
+@mixin titles {
+    h1 {
+        @include title(2em);
+    }
+    h2 {
+        @include title(1.5em);
+    }
+    h3 {
+        @include title(1.3em);
+    }
+    h4 {
+        @include title(1.1em);
+    }
+    h5 {
+        @include title(0.9em);
+    }
+}
+
+@mixin title($tx-sz) {
+    position: relative;
+    display: block;
+    @include typography('large', true);
+    font-size: $tx-sz;
+    color: inherit;
+}

@@ -1,0 +1,77 @@
+
+@mixin header {
+    header {
+        position: relative;
+        height: calc(95vh);
+        width: 100%;
+        overflow: hidden;
+        color: $cl-back-d;
+        background-color: $cl-fore;
+        .header-title {
+            position: absolute;
+            height: 50%;
+            width: 100%;
+            top: 25%;
+            padding: 0px 20px;
+            z-index: 3;
+            @include respond(large) {
+                padding: 0px 20%;
+            }
+        }
+        .header-backdrop {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            .header-overlay {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 100%;
+                width: 100%;
+                z-index: 2;
+                background-color: rgba(255, 255, 255, 0.4);
+            }
+            img {
+                position: absolute;
+                height: 100%;
+                @include respond(medium) {
+                    &:not(:last-child) {
+                        display: none;
+                    }
+                }
+            }
+            video {
+                display: none;
+                height: 100%;
+                @include respond(medium) {
+                    display: block;
+                }
+            }
+        }
+        .header-action {
+            position: relative;
+            height: auto;
+            width: 170px;
+            bottom: 20%;
+            margin: 0px auto;
+            z-index: 3;
+            @include respond(small) {
+                display: none;
+            }
+            a {
+                @include button-color($cl-fore-l, rgba(0, 0, 0, 0.5));
+                @include typography('xl', false);
+                padding-top: 10px;
+                padding-bottom: 10px;
+                line-height: 1em;
+                border: 1px solid rgba(255, 255, 255, 0.8);
+                border-radius: 0px;
+                &:hover, &:focus {
+                    @include button-color($cl-back-d, $cl-fore-l);
+                }
+            }
+        }
+    }
+}

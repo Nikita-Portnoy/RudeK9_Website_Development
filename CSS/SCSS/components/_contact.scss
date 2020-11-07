@@ -1,0 +1,48 @@
+@mixin contact {
+    .contact-list {
+        .contact-list-row {
+            position: relative;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 20px 0px;
+            .contact-list-icon {
+                flex: 0 0 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 50px;
+                margin-right: 20px;
+                border-radius: 30px;
+                color: $cl-back;
+                background-color: #fff;
+            }
+        }
+    }
+    .contact-faq {
+        position: relative;
+        height: auto;
+        width: 100%;
+        margin: 50px 0px;
+        .contact-faq-list {
+            .contact-faq-list-item {
+                margin: 30px 0px;
+            }
+        }
+        .contact-faq-sublist {
+            padding-left: 10px;
+            list-style-type: square;
+            @include respond(small) {
+                padding-left: 20px;
+            }
+            @include respond(medium) {
+                padding-left: 40px;
+            }
+            li {
+                margin: 8px;
+            }
+        }
+    }
+}

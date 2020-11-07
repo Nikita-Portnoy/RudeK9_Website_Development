@@ -1,0 +1,106 @@
+@mixin sections {
+    section {
+        @include section($cl-back-d, $cl-fore-l);
+        &.dark {@include section($cl-fore-l, $cl-back)}
+    }
+}
+
+@mixin section($txt-cl, $bg-cl) {
+    position: relative;
+    height: auto;
+    width: 100%;
+    color: $txt-cl;
+    background-color: $bg-cl;
+    .section-content {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        max-width: 1440px;
+        margin: 20px auto;
+        padding: 20px 0px;
+        .section-header {
+            flex: 0 0 100%;
+            position: relative;
+            display: block;
+            margin: 0px auto;
+            padding: 20px 0px;
+            text-align: center;
+        }
+        .section-body {
+            flex: 2 1 50%;
+            @include typography('medium', false);
+            position: relative;
+            padding: 20px;
+            max-width: 100%;
+            @include respond(small) {
+                padding: 20px 60px;
+            }
+            p {
+                padding: 10px 0px;
+            }
+        }
+        .section-aside {
+            flex: 1 0 300px;
+            position: relative;
+            display: none;
+            padding: 20px 60px;
+            @include respond(small) {
+                display: block;
+            }
+            img {
+                position: relative;
+                height: auto;
+                width: 100%;
+            }
+        }
+        .section-figure {
+            flex: 1 0 100%;
+            position: relative;
+            display: block;
+            @include respond(small) {
+                padding: 0px 60px;
+            }
+            @include respond(medium) {
+                flex: 1 0 50%;
+                padding: 0px 30px;
+            }
+            @include respond(large) {
+                flex: 0 0 40%;
+                padding: 30px;
+            }
+            img {
+                position: relative;
+                height: auto;
+                width: 100%;
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+                @include respond(medium) {
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+                }
+            }
+        }
+        .section-footer {
+            flex: 1 0 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            img {
+                position: relative;
+                height: auto;
+                width: 80px;
+                margin: 50px auto 0px;
+                padding: 20px 0px;
+            }
+        }
+    }
+    & .section-aside img {
+        filter: drop-shadow(1px 1px 50px rgba(74, 74, 86, 0.25)) drop-shadow(-1px 1px 50px rgba(74, 74, 86, 0.25)) drop-shadow(1px -1px 50px rgba(74, 74, 86, 0.25)) drop-shadow(-1px -1px 50px rgba(74, 74, 86, 0.25));
+    }
+    &.dark .section-aside img {
+        filter: drop-shadow(1px 1px 50px rgba(255, 255, 255, 0.25)) drop-shadow(-1px 1px 50px rgba(255, 255, 255, 0.25)) drop-shadow(1px -1px 50px rgba(255, 255, 255, 0.25)) drop-shadow(-1px -1px 50px rgba(255, 255, 255, 0.25));
+    }
+}

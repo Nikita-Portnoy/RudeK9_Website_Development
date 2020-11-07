@@ -1,0 +1,93 @@
+
+@mixin nav {
+    nav {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 5;
+        background-color: $cl-fore;
+        .nav-content {
+            position: relative;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0px auto;
+            padding: 0px 10px;
+            #nav-logo {
+                align-self: baseline;
+                position: relative;
+                margin: 10px 0px;
+                @include respond(small) {
+                    margin: 5px 0px;
+                }
+                img {
+                    position: relative;
+                    height: 80px;
+                    @include respond(small) {
+                        height: 100px;
+                    }
+                }
+            }
+            #nav-toggle {
+                @include respond(small) {
+                    display: none;
+                }
+            }
+            .nav-links {
+                display: none;
+                @include respond(small) {
+                    display: block;
+                    width: 102px;
+                }
+            }
+        }
+        .nav-menu {
+            position: relative;
+            display: none;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 100%;
+            padding-left: 100px;
+            &.active {
+                display: flex;
+                @include respond(small) {
+                    display: none;
+                }
+            }
+            .nav-menu-actions {
+                position: relative;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 100%;
+                width: 50px;
+            }
+            .nav-menu-links {
+                flex: 0 0 200px;
+                position: relative;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                height: 100%;
+                margin: 0px 0px 0px 25px;
+                li {
+                    border-left: 3px solid $cl-back-d;
+                    a {
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@mixin main {
+    main {
+        min-height: 80vh;
+        padding-top: 50px;
+        @include respond(medium) {
+            padding-top: 90px;
+        }
+        &.no-pad-mob {
+            padding-top: 0px;
+            @include respond(small) {
+                padding-top: 90px;
+            }
+        }
+        &.no-pad {
+            padding-top: 0px;
+        }
+    }
+}

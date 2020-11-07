@@ -1,0 +1,94 @@
+@mixin index {
+    .index-prog {
+        .index-prog-row {
+            position: relative;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 20px 0px;
+            .index-prog-icon {
+                flex: 0 0 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 50px;
+                margin-right: 20px;
+                border-radius: 30px;
+                color: $cl-back;
+                background-color: #fff;
+            }
+            .index-prog-list {
+                @include typography('medium', false);
+                flex: 0 0 120px;
+                margin: 0px auto;
+                list-style: square;
+                li {
+                    padding: 3px 0px;
+                }
+            }
+        }
+    }
+    .index-link {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        margin-top: 50px;
+        padding-top: 10px;
+        border-top: 3px solid currentColor;
+        a {
+            @include typography('large', true);
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            text-decoration: none;
+            color: currentColor;
+        }
+    }
+    .index-test {
+        .index-test-list {
+            display: block;
+            @include respond(large) {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+            li {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                margin: 50px 0px;
+                @include respond(large) {
+                    flex: 0 0 30%;
+                    margin: 0px;
+                }
+                &:first-child {margin-top: 0px;}
+                img {
+                    flex: 2 0 100px;
+                    display: none;
+                    margin-right: 20px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    @include respond(medium) {
+                        display: block;
+                    }
+                    @include respond(large) {
+                        margin-right: 0px;
+                    }
+                }
+                blockquote {
+                    @include typography('medium', false);
+                    font-style: italic;
+                    flex: 1 1 80%;
+                    padding: 10px 0px;
+                }
+                p {
+                    @include typography('medium', true);
+                    flex: 0 0 100%;
+                }
+            }
+        }
+    }
+}
